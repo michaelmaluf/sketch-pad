@@ -1,0 +1,126 @@
+body {
+    font-family: 'Golos Text', sans-serif;
+    color: #62b9a7;
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+footer {
+    text-align: center;
+    margin-top: 75px;
+    font-size: 18px;
+}
+
+.main {
+    margin-top: 25px;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* sidebar */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+    height: 300px;
+    padding: 25px 0;
+    border: 5px solid #62b9a7;
+}
+
+/* sidebar buttons */
+
+button {
+    width: 50%;
+    height: 10%;
+    background-color: black;
+    color: #62b9a7;
+    border: 1px solid #62b9a7;
+    cursor: pointer;
+}
+
+button.active {
+    background-color: #62b9a7;
+    color: black;
+}
+
+button:hover {
+    background-color: #62b9a7;
+    color: black;
+}
+
+/* css for the color input */
+
+input[type='color'] {
+    -webkit-appearance: none;
+    border-radius: 75px;
+    border: 1px solid #62b9a7;
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color:#62b9a7;;
+}
+  
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* css for the slider input that changes the grid */
+
+input[type='range'] {
+    -webkit-appearance: none;
+    background-color: black;
+}
+
+
+input[type='range']::-webkit-slider-runnable-track {
+    height: 7.5px;
+    border: 1px solid #62b9a7;
+    border-radius: 25px;
+    background: black;
+    outline: none;
+    box-shadow: none;
+}
+  
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    margin-top: -8px;
+    background: #62b9a7;
+}
+
+/* grid */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    width: 500px;
+    height: 500px;
+    border: 5px solid #62b9a7;
+}
+
+.grid-square {
+    background-color: black;
+    border: 0.1px solid grey;
+}
+
+
+
